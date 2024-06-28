@@ -10,7 +10,7 @@ const AddUser: React.FC = () => {
         const newUser = { id, name };
 
         try {
-            const response = await fetch('https://8d2bef02-5170-441c-82c1-00571422b3d7-00-1676bxo36y4w5.pike.replit.dev/add-user', {
+            const response = await fetch('https://shic-print-billing.onrender.com/add-user', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
