@@ -38,7 +38,7 @@ const BulkDebts: React.FC = () => {
         const newTransaction = { ...newDebt, date: today };
 
         try {
-            const response = await fetch('https://8d2bef02-5170-441c-82c1-00571422b3d7-00-1676bxo36y4w5.pike.replit.dev/bulk-debt', {
+            const response = await fetch('https://shic-print-billing.onrender.com/bulk-debt', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
