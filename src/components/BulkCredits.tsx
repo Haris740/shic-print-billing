@@ -11,7 +11,7 @@ const BulkCredits: React.FC = () => {
 
     const handleBulkCredit = async () => {
         try {
-            const response = await fetch('https://8d2bef02-5170-441c-82c1-00571422b3d7-00-1676bxo36y4w5.pike.replit.dev/bulk-credit', {
+            const response = await fetch('https://shic-print-billing.onrender.com/bulk-credit', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
