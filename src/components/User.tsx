@@ -18,7 +18,7 @@ const User: React.FC = () => {
   const [newCredit, setNewCredit] = useState<number>(0);
 
   useEffect(() => {
-    fetch(`https://8d2bef02-5170-441c-82c1-00571422b3d7-00-1676bxo36y4w5.pike.replit.dev/api/user/${id}`)
+    fetch(`https://shic-print-billing.onrender.com/api/user/${id}`)
       .then(response => response.json())
       .then(data => {
         setUser(data);
@@ -87,7 +87,7 @@ const User: React.FC = () => {
     const today = new Date().toLocaleDateString();
     const newTransaction = { amount: newCredit, date: today };
     try {
-      const response = await fetch(`https://8d2bef02-5170-441c-82c1-00571422b3d7-00-1676bxo36y4w5.pike.replit.dev/api/user/${id}/add-credit`, {
+      const response = await fetch(`https://shic-print-billing.onrender.com/api/user/${id}/add-credit`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
