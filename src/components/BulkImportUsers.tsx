@@ -26,7 +26,7 @@ const BulkImportUsers: React.FC = () => {
             const jsonData = XLSX.utils.sheet_to_json(worksheet);
 
             try {
-                const response = await fetch('https://8d2bef02-5170-441c-82c1-00571422b3d7-00-1676bxo36y4w5.pike.replit.dev/bulk-import-users', {
+                const response = await fetch('https://shic-print-billing.onrender.com/bulk-import-users', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
