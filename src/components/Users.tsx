@@ -13,7 +13,7 @@ const Users: React.FC = () => {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    fetch('https://8d2bef02-5170-441c-82c1-00571422b3d7-00-1676bxo36y4w5.pike.replit.dev/api/users')
+    fetch('https://shic-print-billing.onrender.com/api/users')
       .then(response => response.json())
       .then(data => {
         setUsers(data);
@@ -28,7 +28,7 @@ const Users: React.FC = () => {
 
   const deleteUser = async (id: string) => {
     try {
-      const response = await fetch(`https://8d2bef02-5170-441c-82c1-00571422b3d7-00-1676bxo36y4w5.pike.replit.dev/api/users/${id}`, {
+      const response = await fetch(`https://shic-print-billing.onrender.com/api/users/${id}`, {
         method: 'DELETE',
       });
 
@@ -46,7 +46,7 @@ const Users: React.FC = () => {
     const newName = prompt('Enter new name for user:');
     if (newName) {
       try {
-        const response = await fetch(`https://8d2bef02-5170-441c-82c1-00571422b3d7-00-1676bxo36y4w5.pike.replit.dev/api/users/${id}`, {
+        const response = await fetch(`https://shic-print-billing.onrender.com/api/users/${id}`, {
           method: 'PATCH',
           headers: {
             'Content-Type': 'application/json',
